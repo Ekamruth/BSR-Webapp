@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BSR Power Constructions </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <style>
+    #heading{
+      color:rgb(255,102,0)
+    }
+    #footer{
+      text-align:center;
+    }
+    div.a{
+      line-height:30px
+    }
+    div.b{
+      line-height:40px
+    }
+    .vertical{
+      border-left: 2px solid black;
+      height: 220px;
+      position: absolute;
+      left: 50%;
+      margin-left:-10px;
+    }
+    body{
+      background-image:linear-gradient(lightskyblue,white,skyblue)
+    }
+    
+  </style>
+</head>
+<body>
+  {% include 'nav.html' %}
+  {% include 'services_para.html'%}
+  <div class="container mb-4">
+    <div class="row">
+      <div class="col">
+        <h4 id="heading">SERVICES</h4>
+        <p class="a">Manufacturing of Power Transformers<br>
+Manufacturing of PSCC poles<br>
+Commissioning of Substations<br>
+Erection of Electrical Lines<br>
+Preventive Maintenance<br>
+Energy Saving Solutions<br>
+Transportation<br>
+Power Solutions
+</p>
+      </div>
+      <div class="vertical"></div>
+      <div class="col">
+        <h4 id="heading">PRODUCTS</h4>
+        <div class="row">
+          <div class="col">
+            <p class="a">Poles<br>8mtrs<br>9.1mtrs<br>Spun poles</p>
+          </div>
+          <div class="col">
+            <p class="a">Transformers<br>16kva<br>25kva<br>100kva<br>160kva<br>300kva</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-4 mb-4">
+      <div id="panel_pic" class="col-sm img-fluid">
+        <img src="https://bsrwebsite.ekamruthgangara.repl.co/static/pic1.png" height="250" width="250">
+      </div>
+      <div id="panel_pic" class="col-sm img-fluid">
+        <img src="https://bsrwebsite.ekamruthgangara.repl.co/static/pic2.png" height="250" width="250">
+      </div>
+      <div id="panel_pic" class="col-sm img-fluid">
+        <img src="https://bsrwebsite.ekamruthgangara.repl.co/static/pic3.png" height="250" width="250">
+      </div>
+      <div id="panel_pic" class="col-sm img-fluid">
+        <img src="https://bsrwebsite.ekamruthgangara.repl.co/static/pic4.png" height="250" width="250">
+      </div>
+    </div>
+  {% include 'services_content.html' %}
+    <hr>
+  {% include 'footer.html' %}
+  </div>  
+</body>
+</html>
